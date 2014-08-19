@@ -101,10 +101,9 @@ mvn clean package && mvn -P cargo.run
 ```
 
 
-### navigate to:
-```
+### Launch Essentials webapp
+
 [http://localhost:8080/essentials](http://localhost:8080/essentials)
-```
 
 
 
