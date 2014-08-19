@@ -11,7 +11,7 @@ NOTE: before using essentials make sure:
 # Getting Started
 
 ### Clone project *
-clone project into YOUR_PROJECT_DIR: git clone git@github.com:onehippo/essentials-existing.git
+clone project into YOUR_PROJECT_DIR:
 ```
 $ cd YOUR_PROJECT_DIR
 $ git clone git@github.com:machak/essentials-existing-project.git essentials
