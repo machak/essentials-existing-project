@@ -25,11 +25,11 @@ selectedComponentsPackage: package name where HST components are located e.g. or
 selectedRestPackage: package name where HST rest classes are located e.g. org.example.rest
 ```
 
-### add property to main pom (YOUR_PROJECT_DIR/pom.xml).
+### add property to the main pom.xml (YOUR_PROJECT_DIR/pom.xml).
 ```
  <essentials.version>ESSENTIALS_VERSION</essentials.version>
 ```
-### add managed dependencies to main pom:
+### add managed dependencies to the main pom.xml:
 ```
      <dependency>
         <groupId>org.onehippo.cms7.essentials</groupId>
@@ -52,11 +52,11 @@ selectedRestPackage: package name where HST rest classes are located e.g. org.ex
         <version>${essentials.version}</version>
       </dependency>
 ```
-### add module to main pom:
+### add module to the main pom.xml:
 ```
   <module>essentials</module>
 ```
-### add deployable to main pom:
+### add deployable to the main pom.xml:
 ```
 <deployable>
   <location>${project.basedir}/essentials/target/essentials.war</location>
@@ -68,11 +68,11 @@ selectedRestPackage: package name where HST rest classes are located e.g. org.ex
 ```
 
 
-### change parent pom settings and version of YOUR_PROJECT_DIR/essentials/pom.xml:
+### change parent pom.xml settings and version of YOUR_PROJECT_DIR/essentials/pom.xml:
 - version, group and artifact name
 
 
-### add following dependencies to CMS pom (YOUR_PROJECT_DIR/cms/pom.xml):
+### add following dependencies to CMS pom.xml (YOUR_PROJECT_DIR/cms/pom.xml):
 ```
     <dependency>
       <groupId>org.onehippo.cms7.essentials</groupId>
@@ -83,7 +83,7 @@ selectedRestPackage: package name where HST rest classes are located e.g. org.ex
       <artifactId>hippo-essentials-plugin-api</artifactId>
     </dependency>
 ```
-### add following dependencies to SITE project (YOUR_PROJECT_DIR/site/pom.xml) :
+### add following dependencies to the SITE project (YOUR_PROJECT_DIR/site/pom.xml) :
 ```
     <dependency>
       <groupId>org.onehippo.cms7.essentials</groupId>
