@@ -108,10 +108,28 @@ mvn clean package && mvn -P cargo.run
 
 
 
+
 ### Current limitations
+# What will work:
+- component installation (can be dragged droped from component catalog)
+- templates installation
+- tools (Image Gallery tool, Beanwriter, REST setup)
 
+# What might work (see "Name conflicts"):
+- sitemaps, pages and component configuration.
 
-### Terms:
+#Name/resource conflicts:
+
+Name conflicts may happen during the installation process. If some resource already exists (e.g. in case of exiting File, JCR Node or registered Document type),
+Hippo Essentials will not overwrite existing resource.
+So, although your existing work will not be overwritten, this "partial" installation state could "cripple" your project. Think of things like:
+- adding markup files (JSP or FreeMarker) which are never used
+- additional HST component containers/workspaces
+- adding of sample content
+
+Because Hippo Essentials itself doesn't support roll-back feature, developers themselves should review and revert any unwanted changes.
+
+### Terms used:
 ```
 ESSENTIALS_VERSION= latest essentials version, check @Please check latest version on: http://www.onehippo.org/trails/essentials-trail/hippo-essentials-getting-started.html
 YOUR_PROJECT_DIR = root of your project e.g. /home/users/joedoe/myhippoproject
