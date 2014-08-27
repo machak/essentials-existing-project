@@ -10,14 +10,15 @@ NOTE: before using essentials make sure:
 
 # Getting Started
 
-### Clone project *
-clone project into YOUR_PROJECT_DIR:
-```
-$ cd YOUR_PROJECT_DIR
-$ git clone git@github.com:machak/essentials-existing-project.git essentials
+### Create a new essentials project as described here:
 
-```
-### change following settings within: YOUR_PROJECT_DIR/essentials/src/main/resources/project-settings.xml file:
+[http://www.onehippo.org/trails/essentials-trail/creating-a-project.html](http://www.onehippo.org/trails/essentials-trail/creating-a-project.html)
+
+Make sure you use your current project settings (artifact, group name and project package).
+After creating new project, copy essentials directory (YOUR_NEW_PROJECT/essentials) into your current project.
+
+
+### Check (and change if necessary) the following settings within: YOUR_PROJECT_DIR/essentials/src/main/resources/project-settings.xml file:
 ```
 projectNamespace: namespace prefix used within your project, by default name can be located within : YOUR_PROJECT_DIR/bootstrap/configuration/src/main/resources/namespaces/YOUR_PROJECT_NAME.cnd
 selectedBeansPackage: package name where HST beans are located e.g. org.example.beans
